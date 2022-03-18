@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "find a job",
+      "details": "and as soon as possible",
+      "complete": false,
+      "id": 6904
+    },
+    {
+      "title": "new project",
+      "details": "recipes (on react)",
+      "complete": false,
+      "id": 8035
+    },
+    {
+      "title": "add planner to github",
+      "details": "success",
+      "complete": true,
+      "id": 9514
+    }
+  ]
+}
