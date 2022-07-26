@@ -1,7 +1,7 @@
 <template>
   <div class="project" :class="{ complete: project.complete }">
     <div class="actions">
-      <h3 @click="showDetails = !showDetails">{{ project.title }}</h3>
+      <h3 @click="showDetails = !showDetails">{{ snippet }}</h3>
       <div class="icons">
         <span @click="deleteProject" class="material-icons">delete</span>
         <router-link :to="{ name: 'EditProject', params: { id: project.id }}">
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+
 export default {
   props: ['project'],
   data() {
@@ -39,6 +40,11 @@ export default {
       }).then(() => {
         this.$emit('complete', this.project.id)
       }).catch(err => console.log(err))
+    },
+  },
+  computed: {
+    snippet(props) {
+      return props.project.title.substring(0,35) + '...'
     }
   }
   

@@ -15,7 +15,7 @@ npm run serve
 npm run build
 ```
 
-## ❗️Also, install connection with json server:
+## ❗️Install connection with json server:
 
 ####  First step
 ```
@@ -26,5 +26,3 @@ npm install json-server
 ```
 npx json-server --watch data/db.json
 ```
-
-🎉*Great! Now you can use project planner for your daily goals!*
